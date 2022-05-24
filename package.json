@@ -7,8 +7,9 @@
     ]
   },
   "scripts": {
-    "bootstrap": "lerna bootstrap",
-    "build": "lerna run build"
+    "bootstrap": "lerna clean -y && lerna bootstrap",
+    "build": "lerna run build",
+    "dev:h5": "lerna exec --scope portal yarn dev:h5"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.10",
